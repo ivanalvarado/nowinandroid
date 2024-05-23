@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 plugins {
-    alias(libs.plugins.nowinandroid.android.library)
-    alias(libs.plugins.nowinandroid.android.library.jacoco)
+    id("nowinandroid.android.library")
+    id("nowinandroid.android.library.jacoco")
     id("com.google.devtools.ksp")
 }
 

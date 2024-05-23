@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 plugins {
-    alias(libs.plugins.nowinandroid.android.library)
-    alias(libs.plugins.nowinandroid.android.hilt)
+    id("nowinandroid.android.library")
+    id("nowinandroid.android.hilt")
 }
 
 android {

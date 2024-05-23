@@ -177,3 +177,4 @@ nowinandroid-android-lint = { id = "nowinandroid.android.lint", version = "unspe
 nowinandroid-android-room = { id = "nowinandroid.android.room", version = "unspecified" }
 nowinandroid-android-test = { id = "nowinandroid.android.test", version = "unspecified" }
 nowinandroid-jvm-library = { id = "nowinandroid.jvm.library", version = "unspecified" }
+nowinandroid-android-root = { id = "nowinandroid.android.root", version = "unspecified" }

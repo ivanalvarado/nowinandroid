@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 plugins {
-    alias(libs.plugins.nowinandroid.android.library)
-    alias(libs.plugins.nowinandroid.android.library.jacoco)
-    alias(libs.plugins.nowinandroid.android.hilt)
+    id("nowinandroid.android.library")
+    id("nowinandroid.android.library.jacoco")
+    id("nowinandroid.android.hilt")
     id("kotlinx-serialization")
 }
 

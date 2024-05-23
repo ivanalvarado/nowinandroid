@@ -19,7 +19,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     `java-library`
     kotlin("jvm")
-    alias(libs.plugins.nowinandroid.android.lint)
+    id("nowinandroid.android.lint")
 }
 
 java {

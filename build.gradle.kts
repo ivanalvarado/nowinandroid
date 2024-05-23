@@ -31,6 +31,7 @@ buildscript {
 
 // Lists all plugins used throughout the project without applying them.
 plugins {
+    id("nowinandroid.android.root")
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.android.library) apply false
     alias(libs.plugins.android.test) apply false

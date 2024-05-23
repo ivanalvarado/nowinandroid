@@ -35,13 +35,13 @@ tasks.withType<KotlinCompile>().configureEach {
 }
 
 dependencies {
-    compileOnly(libs.android.gradlePlugin)
-    compileOnly(libs.android.tools.common)
-    compileOnly(libs.firebase.crashlytics.gradlePlugin)
-    compileOnly(libs.firebase.performance.gradlePlugin)
-    compileOnly(libs.kotlin.gradlePlugin)
-    compileOnly(libs.ksp.gradlePlugin)
-    compileOnly(libs.room.gradlePlugin)
+    implementation(libs.android.gradlePlugin)
+    implementation(libs.android.tools.common)
+    implementation(libs.firebase.crashlytics.gradlePlugin)
+    implementation(libs.firebase.performance.gradlePlugin)
+    implementation(libs.kotlin.gradlePlugin)
+    implementation(libs.ksp.gradlePlugin)
+    implementation(libs.room.gradlePlugin)
     implementation(libs.truth)
 }
 
@@ -109,6 +109,10 @@ gradlePlugin {
         register("jvmLibrary") {
             id = "nowinandroid.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
+        }
+        register("rootPlugin") {
+            id = "nowinandroid.android.root"
+            implementationClass = "RootConventionPlugin"
         }
     }
 }
