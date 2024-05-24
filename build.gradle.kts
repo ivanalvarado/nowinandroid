@@ -27,9 +27,10 @@ buildscript {
             exclude(group = "com.google.protobuf")
         }
     }
+
 }
 
-// Lists all plugins used throughout the project without applying them.
+// Lists all plugins used throughout the project
 plugins {
     id("nowinandroid.android.root")
     alias(libs.plugins.android.application) apply false
@@ -47,4 +48,5 @@ plugins {
     alias(libs.plugins.roborazzi) apply false
     alias(libs.plugins.secrets) apply false
     alias(libs.plugins.room) apply false
+    alias(libs.plugins.module.graph) apply true // Plugin applied to allow module graph generation
 }
